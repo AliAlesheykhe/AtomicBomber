@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.AvatarMenuController"
+            prefHeight="700.0" prefWidth="1000.0"
+            stylesheets="@../CSS/style.css" styleClass="main-profile-background">
+        <center>
+            <VBox alignment="CENTER" spacing="15">
+                <Label text="Avatar menu" styleClass="title"/>
+                <Label text="click an avatar to choose" styleClass="subtitle"/>
+                <HBox spacing="15" alignment="CENTER">
+                    <ImageView fx:id="image1" fitWidth="200" fitHeight="200" onMouseClicked="#chooseImage"/>
+                    <ImageView fx:id="image2" fitWidth="200" fitHeight="200" onMouseClicked="#chooseImage"/>
+                    <ImageView fx:id="image3" fitWidth="200" fitHeight="200" onMouseClicked="#chooseImage"/>
+                    <ImageView fx:id="image4" fitWidth="200" fitHeight="200" onMouseClicked="#chooseImage"/>
+                </HBox>
+                <Button text="drag and drop an image" styleClass="subtitle" onMouseClicked="#goToDragAndDropAvatarMenu"/>
+                <Button text="choose from file" styleClass="subtitle" onMouseClicked="#chooseImageFromFile"/>
+                <Button text="back to profile menu" styleClass="subtitle" onMouseClicked="#goToProfileMenu"/>
+            </VBox>
+        </center>
+
+</BorderPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.ChangeTrackMenuController"
+            prefHeight="600.0" prefWidth="1000.0" stylesheets="@../CSS/style.css"
+            styleClass="pause-menu">
+    <VBox spacing="15">
+        <HBox fx:id="options" spacing="10">
+            <RadioButton fx:id="track1" text="track1"/>
+            <RadioButton fx:id="track2" text="track2"/>
+            <RadioButton fx:id="track3" text="track3"/>
+        </HBox>
+        <Button text="back to pause menu" onMouseClicked="#goToPauseMenu"/>
+    </VBox>
+
+
+</AnchorPane>

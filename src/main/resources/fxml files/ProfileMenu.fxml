@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.ProfileMenuController"
+            prefHeight="700.0" prefWidth="1000.0" stylesheets="@../CSS/style.css"
+            styleClass="main-profile-background">
+    <top>
+        <VBox maxWidth="-Infinity" spacing="15" alignment="CENTER">
+            <ImageView fx:id="avatar" fitHeight="300.0" fitWidth="300.0" layoutX="61.0" layoutY="83.0"
+                       pickOnBounds="true" preserveRatio="true" onMouseClicked="#goToAvatarMenu">
+            </ImageView>
+            <Label text="Profile Menu" styleClass="title"/>
+            <Label text="change username:" styleClass="subtitle"/>
+            <TextField fx:id="newUsername" promptText="new username" styleClass="info-text"/>
+            <Button text="change username" styleClass="info-text" onMouseClicked="#changeUsername" prefWidth="300"/>
+            <Label text="change password:" styleClass="subtitle"/>
+            <PasswordField fx:id="newPassword" promptText="new password"/>
+            <Button text="change password" styleClass="info-text" onMouseClicked="#changePassword" prefWidth="300"/>
+            <Button text="Sign out" styleClass="info-text" onMouseClicked="#goToLoginMenu" prefWidth="300"/>
+            <Button text="Delete account" styleClass="info-text" onMouseClicked="#deleteAccount" prefWidth="300"/>
+            <Button text="Back to main menu" styleClass="info-text" onMouseClicked="#goToMainMenu" prefWidth="300"/>
+        </VBox>
+    </top>
+
+</BorderPane>

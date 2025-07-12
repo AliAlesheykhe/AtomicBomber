@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.PauseMenuController"
+            prefHeight="700.0" prefWidth="1000.0" stylesheets="@../CSS/style.css"
+            styleClass="pause-menu">
+
+        <VBox alignment="CENTER" spacing="15">
+            <Button styleClass="subtitle" text="save and exit" onMouseClicked="#saveAndExit"/>
+            <Button styleClass="subtitle" text="exit" onMouseClicked="#exit"/>
+            <Button styleClass="subtitle" text="stop music" onMouseClicked="#stopMusic"/>
+            <Button styleClass="subtitle" text="show key manual" onMouseClicked="#goToManual"/>
+            <Button styleClass="subtitle" text="change track" onMouseClicked="#goToChangeTrackMenu"/>
+            <Button styleClass="subtitle" text="resume" onMouseClicked="#resumeGame"/>
+        </VBox>
+
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.EndGameMenuController"
+            prefHeight="700.0" prefWidth="1000.0" stylesheets="@../CSS/style.css"
+            styleClass="pause-menu">
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <Label fx:id="result" styleClass="info-text"/>
+            <Label fx:id="accuracy" styleClass="info-text"/>
+            <Label fx:id="endWave" styleClass="info-text"/>
+            <Label fx:id="endWaveAccuracy" styleClass="info-text"/>
+            <Label fx:id="kills" styleClass="info-text"/>
+            <Button text="exit" onMouseClicked="#exitMenu"/>
+        </VBox>
+    </center>
+
+</BorderPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.ScoreBoardController"
+            prefHeight="700.0" prefWidth="1000.0" stylesheets="@../CSS/style.css"
+            styleClass="main-profile-background">
+    <VBox fx:id="mainBox" spacing="10">
+        <Label styleClass="title" text="Score board"/>
+        <HBox fx:id="user1" spacing="15">
+            <Label styleClass="top-three-players" text="1-"/>
+            <Label styleClass="top-three-players" text="username: "/>
+            <Label fx:id="username1" styleClass="top-three-players"/>
+            <Label fx:id="metric1" styleClass="top-three-players" text="score: "/>
+            <Label fx:id="score1" styleClass="top-three-players"/>
+        </HBox>
+        <HBox fx:id="user2" spacing="15">
+            <Label styleClass="top-three-players" text="2-"/>
+            <Label styleClass="top-three-players" text="username: "/>
+            <Label fx:id="username2" styleClass="top-three-players"/>
+            <Label fx:id="metric2" styleClass="top-three-players" text="score: "/>
+            <Label fx:id="score2" styleClass="top-three-players"/>
+        </HBox>
+        <HBox fx:id="user3" spacing="15">
+            <Label styleClass="top-three-players" text="3-"/>
+            <Label styleClass="top-three-players" text="username: "/>
+            <Label fx:id="username3" styleClass="top-three-players"/>
+            <Label fx:id="metric3" styleClass="top-three-players" text="score: "/>
+            <Label fx:id="score3" styleClass="top-three-players"/>
+        </HBox>
+        <HBox fx:id="user4" spacing="15">
+            <Label styleClass="subtitle" text="4-"/>
+            <Label styleClass="subtitle" text="username: "/>
+            <Label fx:id="username4" styleClass="subtitle"/>
+            <Label fx:id="metric4" styleClass="subtitle" text="score: "/>
+            <Label fx:id="score4" styleClass="subtitle"/>
+        </HBox>
+        <HBox fx:id="user5" spacing="15">
+            <Label styleClass="subtitle" text="5-"/>
+            <Label styleClass="subtitle" text="username: "/>
+            <Label fx:id="username5" styleClass="subtitle"/>
+            <Label fx:id="metric5" styleClass="subtitle" text="score: "/>
+            <Label fx:id="score5" styleClass="subtitle"/>
+        </HBox>
+        <HBox fx:id="user6" spacing="15">
+            <Label styleClass="subtitle" text="6-"/>
+            <Label styleClass="subtitle" text="username: "/>
+            <Label fx:id="username6" styleClass="subtitle"/>
+            <Label fx:id="metric6" styleClass="subtitle" text="score: "/>
+            <Label fx:id="score6" styleClass="subtitle"/>
+        </HBox>
+        <HBox fx:id="user7" spacing="15">
+            <Label styleClass="subtitle" text="7-"/>
+            <Label styleClass="subtitle" text="username: "/>
+            <Label fx:id="username7" styleClass="subtitle"/>
+            <Label fx:id="metric7" styleClass="subtitle" text="score: "/>
+            <Label fx:id="score7" styleClass="subtitle"/>
+        </HBox>
+        <HBox fx:id="user8" spacing="15">
+            <Label styleClass="subtitle" text="8-"/>
+            <Label styleClass="subtitle" text="username: "/>
+            <Label fx:id="username8" styleClass="subtitle"/>
+            <Label fx:id="metric8" styleClass="subtitle" text="score: "/>
+            <Label fx:id="score8" styleClass="subtitle"/>
+        </HBox>
+        <HBox fx:id="user9" spacing="15">
+            <Label styleClass="subtitle" text="9-"/>
+            <Label styleClass="subtitle" text="username: "/>
+            <Label fx:id="username9" styleClass="subtitle"/>
+            <Label fx:id="metric9" styleClass="subtitle" text="score: "/>
+            <Label fx:id="score9" styleClass="subtitle"/>
+        </HBox>
+        <HBox fx:id="user10" spacing="15">
+            <Label styleClass="subtitle" text="10-"/>
+            <Label styleClass="subtitle" text="username: "/>
+            <Label fx:id="username10" styleClass="subtitle"/>
+            <Label fx:id="metric10" styleClass="subtitle" text="score: "/>
+            <Label fx:id="score10" styleClass="subtitle"/>
+        </HBox>
+        <HBox spacing="15">
+            <RadioButton fx:id="radioButton1" styleClass="subtitle" text="sort by score" selected="true"/>
+            <RadioButton fx:id="radioButton2" styleClass="subtitle" text="sort by kills"/>
+            <RadioButton fx:id="radioButton3" styleClass="subtitle" text="sort by difficulty"/>
+            <RadioButton fx:id="radioButton4" styleClass="subtitle" text="sort by accuracy"/>
+        </HBox>
+        <Button styleClass="subtitle" text="back to main menu" prefWidth="300" onMouseClicked="#goToMainMenu"/>
+    </VBox>
+</AnchorPane>

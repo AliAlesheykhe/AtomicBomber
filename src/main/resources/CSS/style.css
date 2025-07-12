@@ -1,0 +1,45 @@
+/* styles.css */
+.login-signup-background{
+    -fx-background-image: url('../images/normal/backgrounds/LoginAndSignUpBackground.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.main-profile-background{
+    -fx-background-image: url('../images/normal/backgrounds/main-profile.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.pause-menu{
+    -fx-background-image: url('../images/normal/backgrounds/blue-sky-clouds.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.title{
+    -fx-font-name: "Arial";
+    -fx-font-size: 30px;
+}
+
+
+.info_text{
+    -fx-font-name: "Arial";
+        -fx-font-size: 15px;
+}
+
+.subtitle{
+    -fx-font-name: "Arial";
+    -fx-font-size: 20px;
+}
+
+.top-three-players {
+    -fx-font-family: "Arial";
+    -fx-font-size: 25px;
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+}
+

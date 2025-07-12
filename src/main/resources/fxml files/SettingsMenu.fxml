@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.SettingsMenuController"
+            prefHeight="700.0" prefWidth="1000.0" stylesheets="@../CSS/style.css"
+            styleClass="main-profile-background" fx:id="mainPane">
+        <top>
+            <VBox alignment="CENTER" spacing="15">
+                <Label styleClass="title" text="Settings"/>
+                <Label styleClass="subtitle" text="difficulty:"/>
+                <HBox spacing="15" alignment="center">
+                    <RadioButton fx:id="easy" text="easy"/>
+                    <RadioButton fx:id="medium" text="medium"/>
+                    <RadioButton fx:id="hard" text="hard"/>
+                </HBox>
+                <RadioButton fx:id="mute" text="mute sound"/>
+                <RadioButton fx:id="blackAndWhite" text="make game black and white"/>
+                <Button styleClass="subtitle" text="change control buttons" onMouseClicked="#goToChangeControlsMenu"/>
+                <Button styleClass="subtitle" text="return to main menu" onMouseClicked="#goToMainMenu"/>
+            </VBox>
+        </top>
+</BorderPane>

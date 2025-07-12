@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.LoginMenuController"
+            prefHeight="700.0" prefWidth="1000.0" stylesheets="@../CSS/style.css"
+            styleClass="login-signup-background">
+    <center>
+        <VBox alignment="CENTER" spacing="15" maxWidth="200">
+            <Label styleClass="title" text="Login menu"/>
+            <TextField fx:id="username" promptText="username"/>
+            <PasswordField fx:id="password" promptText="password"/>
+            <Button text="Log in" maxWidth="200" onMouseClicked="#login"/>
+            <Button text="go to sign up menu" maxWidth="200" onMouseClicked="#goToSignUpMenu"/>
+            <Button text="enter as a guest" maxWidth="200" onMouseClicked="#playGame"/>
+        </VBox>
+    </center>
+</BorderPane>

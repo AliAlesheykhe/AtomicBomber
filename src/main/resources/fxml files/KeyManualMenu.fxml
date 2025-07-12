@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.KeyManualMenuController"
+            prefHeight="600.0" prefWidth="1000.0" stylesheets="@../CSS/style.css"
+            styleClass="pause-menu">
+
+        <VBox fx:id="labels" alignment="CENTER">
+            <Label text="move up" styleClass="subtitle"/>
+            <Label text="move down" styleClass="subtitle"/>
+            <Label text="move right" styleClass="subtitle"/>
+            <Label text="move left" styleClass="subtitle"/>
+            <Label text="drop bomb" styleClass="subtitle"/>
+            <Label text="drop R bomb" styleClass="subtitle"/>
+            <Label text="pause" styleClass="subtitle"/>
+            <Button text="back to pause menu" onMouseClicked="#goToPauseMenu"/>
+        </VBox>
+</AnchorPane>

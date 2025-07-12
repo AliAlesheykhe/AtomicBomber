@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.MainMenuController"
+            prefHeight="700.0" prefWidth="1000.0" stylesheets="@../CSS/style.css"
+            styleClass="main-profile-background">
+    <top>
+        <VBox maxWidth="-Infinity" spacing="15" alignment="CENTER">
+            <Label text="Main menu" styleClass="title"/>
+            <Label fx:id="username" alignment="CENTER" styleClass="info_text"/>
+            <Label text="your avatar:" styleClass="info_text"/>
+            <ImageView fx:id="avatar" fitHeight="300" fitWidth="300" layoutX="61.0" layoutY="83.0"
+                       pickOnBounds="true" preserveRatio="true" onMouseClicked="#goToProfileMenu">
+            </ImageView>
+            <Button text="go to score board" prefWidth="300" onMouseClicked="#goToScoreBoard"/>
+            <Button text="go to settings menu" prefWidth="300" onMouseClicked="#goToSettingsMenu"/>
+            <Button text="start new game" prefWidth="300" onMouseClicked="#startGame"/>
+            <Button text="continue previous game" styleClass="info_text" prefWidth="300"
+            onMouseClicked="#playExistingGame"/>
+            <Button text="exit game" prefWidth="300" onMouseClicked="#exitGame" />
+        </VBox>
+    </top>
+</BorderPane>

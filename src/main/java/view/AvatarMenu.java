@@ -1,0 +1,21 @@
+package view;
+
+import controller.ApplicationController;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
+
+import java.net.URL;
+
+public class AvatarMenu extends Application {
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        ApplicationController.primaryStage = primaryStage;
+        URL url = AvatarMenu.class.getResource("/fxml files/AvatarMenu.fxml");
+        Pane pane = FXMLLoader.load(url);
+        primaryStage.setScene(new Scene(pane));
+        primaryStage.show();
+    }
+}
